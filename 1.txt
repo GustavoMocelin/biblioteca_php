@@ -1,0 +1,11 @@
+1 - Remover ";" da linha abaixo no php.ini
+
+extension=pdo_mysql
+
+$conexao = new PDO("mysql:host=localhost;dbname=mysql", 'root', '');
+
+$resultado = $conexao->query("SELECT FROM ...");
+
+while($livro = $resultado->fetch(PDO::FETCH_ASSOC)){
+  $titulo = $livro['titulo'];
+} 
